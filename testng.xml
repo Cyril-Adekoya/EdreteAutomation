@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All TestRunnerLongRichway Suite">
+    <test verbose="2" preserve-order="false" name="C:/Users/User/IdeaProjects/CyrilPrepMajor/testng.xml" parallel="methods">
+        <classes>
+            <class name="TestRunnerPrepMajor"/>
+        </classes>
+
+
+
+
+    </test>
+</suite>
