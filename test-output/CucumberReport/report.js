@@ -1,11 +1,11 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/EduFunctionalTest.feature");
 formatter.feature({
-  "name": "Edurete Functional Test",
+  "name": "Edurete Functional Test Home Page",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Check link Tabs on Home Page to other pages",
+  "name": "Check the links Tabs on Home Page to other pages",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -19,7 +19,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "MyStepdefs.iAmOnHomepageOfEdurate(String)"
+  "location": "EduFunctionalTestStepdef.iAmOnHomepageOfEdurete(String)"
 });
 formatter.result({
   "status": "passed"
@@ -29,37 +29,37 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "MyStepdefs.iClickedOnAboutUSTabToOpenTheAboutUsPage()"
+  "location": "EduFunctionalTestStepdef.iClickedOnAboutUSTabToOpenTheAboutUsPage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I can navigate forward to Courses Page https://edrete.com/courses/",
+  "name": "I can navigate forward to Courses Page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.iCanNavigateForwardToCoursesPage(String)"
+  "location": "EduFunctionalTestStepdef.iCanNavigateForwardToCoursesPage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I clicked on Plans tab to open the Plan page",
+  "name": "I clicked on Plans tab to open the Plan page on courses page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.iClickedOnPlanTabToOpenPage()"
+  "location": "EduFunctionalTestStepdef.iClickedOnCoursesTabToOpenTheCoursesPage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I can navigate forward to the Contact page https://edrete.com/contact-us/",
+  "name": "I can navigate forward to the Contact page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "MyStepdefs.iCanNavigateForwardToTheContactPage(String)"
+  "location": "EduFunctionalTestStepdef.iCanNavigateForwardToTheContactPage()"
 });
 formatter.result({
   "status": "passed"
@@ -69,7 +69,47 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyStepdefs.iCanNavigateBackToTheHomePage()"
+  "location": "EduFunctionalTestStepdef.iCanNavigateBackToTheHomePage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Check the socialMediaIconsOnHomePage",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@RunEdu1"
+    }
+  ]
+});
+formatter.step({
+  "name": "I am on homepage of Edurate https://edrete.com/",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "EduFunctionalTestStepdef.iAmOnHomepageOfEdurete(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I clicked on the facebook icon to load facebook page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "EduFunctionalTestStepdef.iClickedOnTheInstergramIcon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I scrolled down the current page and clicked on twitter icon to open",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "EduFunctionalTestStepdef.iScrolledDownTheCurrentPageAndClickedOnTwitterIconToOpen()"
 });
 formatter.result({
   "status": "passed"
